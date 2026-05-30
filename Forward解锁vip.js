@@ -1,5 +1,6 @@
 #!name=Forward解锁vip
 #!desc=最高支持1.3.13
+#!openUrl=https://apps.apple.com/app/id6503940939
 #!icon=https://raw.githubusercontent.com/Facsy/Loon/refs/heads/main/icon/Forward.png#!homepage=https://github.com/Facsy/Loon
 #!author=Facsy
   
