@@ -1,7 +1,7 @@
 #!name=iOS证书验证状态屏蔽
 #!desc=iOS证书验证状态屏蔽
 #!author=Salem
-#!icon=https://cdn.jsdnet/gh/salem-2007/apple-cert-block@main/icon.png
+#!icon=https://raw.githubusercontent.com/Facsy/Loon/refs/heads/main/icon/iPhone设置.png
 #!homepage=https://github.com/salem-2007/apple-cert-block
 #!openUrl=https://t.me/LKm0907
 #!tag=Apple,Certificate,AntiRevoke
