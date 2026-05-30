@@ -1,5 +1,5 @@
-#!name=iOS证书验证防过期
-#!desc=iOS证书验证防过期
+#!name=iOS证书验证状态屏蔽
+#!desc=iOS证书验证状态屏蔽
 #!author=Salem
 #!icon=https://cdn.jsdnet/gh/salem-2007/apple-cert-block@main/icon.png
 #!homepage=https://github.com/salem-2007/apple-cert-block
