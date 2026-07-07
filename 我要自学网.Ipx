@@ -10,16 +10,16 @@ hostname = webapi.51zxw.net
 [Script]
 
 # 开屏广告
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/QueryFirstTimeEnterAdConfig$ requires-body=true,timeout=10,script-path=51zxw_noad.js,tag=51ZXW Splash
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/QueryFirstTimeEnterAdConfig$ requires-body=true,timeout=10,script-path=https://github.com/Facsy/Loon/raw/refs/heads/main/51zxw_noad.js,tag=51ZXW Splash
 
 # 首页弹窗
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType$ requires-body=true,timeout=10,script-path=51zxw_noad.js,tag=51ZXW HomeModal
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType$ requires-body=true,timeout=10,script-path=https://github.com/Facsy/Loon/raw/refs/heads/main/51zxw_noad.js,tag=51ZXW HomeModal
 
 # 金币/会员促销
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/VCoinDiscountPromotion$ requires-body=true,timeout=10,script-path=51zxw_noad.js,tag=51ZXW Promotion
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/VCoinDiscountPromotion$ requires-body=true,timeout=10,script-path=https://github.com/Facsy/Loon/raw/refs/heads/main/51zxw_noad.js,tag=51ZXW Promotion
 
 # 全局配置
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig$ requires-body=true,timeout=10,script-path=51zxw_noad.js,tag=51ZXW GlobalConfig
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig$ requires-body=true,timeout=10,script-path=https://github.com/Facsy/Loon/raw/refs/heads/main/51zxw_noad.js,tag=51ZXW GlobalConfig
 
 [Rule]
 
