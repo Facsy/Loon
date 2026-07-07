@@ -3,6 +3,7 @@
 #!author=ChatGPT
 #!version=0.1.0
 #!system=ios
+#!icon=https://raw.githubusercontent.com/Facsy/Loon/refs/heads/main/icon/我要自学网.png
 
 [MITM]
 hostname = webapi.51zxw.net
