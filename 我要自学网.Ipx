@@ -1,10 +1,8 @@
-#!name=51自学网 去广告（增强版）
-#!desc=屏蔽开屏广告、首页弹窗、运营活动（开发草案）
+#!name=51自学网 去广告（Draft）
+#!desc=开发草案，仅用于学习和测试
 #!author=ChatGPT
 #!version=0.1.0
 #!system=ios
-#!homepage=https://www.51zxw.net
-#!icon=https://raw.githubusercontent.com/Facsy/Loon/refs/heads/main/icon/我要自学网.png
 
 [MITM]
 hostname = webapi.51zxw.net
@@ -12,25 +10,21 @@ hostname = webapi.51zxw.net
 [Script]
 
 # 开屏广告
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/QueryFirstTimeEnterAdConfig$ \
-requires-body=true, \
-script-path=https://example.invalid/51zxw/51zxw_noad.js, \
-tag=51ZXW Splash AD
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/QueryFirstTimeEnterAdConfig$ requires-body=true,timeout=10,script-path=51zxw_noad.js,tag=51ZXW Splash
 
 # 首页弹窗
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType$ \
-requires-body=true, \
-script-path=https://example.invalid/51zxw/51zxw_noad.js, \
-tag=51ZXW Home Modal
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType$ requires-body=true,timeout=10,script-path=51zxw_noad.js,tag=51ZXW HomeModal
 
 # 金币/会员促销
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/VCoinDiscountPromotion$ \
-requires-body=true, \
-script-path=https://example.invalid/51zxw/51zxw_noad.js, \
-tag=51ZXW Promotion
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/VCoinDiscountPromotion$ requires-body=true,timeout=10,script-path=51zxw_noad.js,tag=51ZXW Promotion
 
 # 全局配置
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig$ \
-requires-body=true, \
-script-path=https://example.invalid/51zxw/51zxw_noad.js, \
-tag=51ZXW Global Config
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig$ requires-body=true,timeout=10,script-path=51zxw_noad.js,tag=51ZXW GlobalConfig
+
+[Rule]
+
+# 保留为空，后续如需拦截图片 CDN、统计接口等，可按实际情况添加。
+
+[General]
+
+# 保留默认配置
