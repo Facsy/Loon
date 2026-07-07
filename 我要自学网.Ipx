@@ -1,0 +1,18 @@
+#!name=我要自学网去广告
+#!desc=屏蔽开屏广告、首页弹窗、促销弹窗
+#!author=ChatGPT
+#!system=ios
+#!icon=https://www.51zxw.net/favicon.ico
+
+[MITM]
+hostname = webapi.51zxw.net
+
+[Script]
+
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/QueryFirstTimeEnterAdConfig script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/rewrite/replace-body/replace-body.js, requires-body=true, timeout=60, argument={"success":true,"AdConfig":{"DisableAD":true}}
+
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/rewrite/replace-body/replace-body.js, requires-body=true, timeout=60, argument={"success":true,"data":{}}
+
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/VCoinDiscountPromotion script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/rewrite/replace-body/replace-body.js, requires-body=true, timeout=60, argument={"success":true,"data":{}}
+
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/rewrite/replace-body/replace-body.js, requires-body=true, timeout=60
