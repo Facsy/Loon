@@ -1,18 +1,36 @@
-#!name=我要自学网去广告
-#!desc=屏蔽开屏广告、首页弹窗、促销弹窗
+#!name=51自学网 去广告（增强版）
+#!desc=屏蔽开屏广告、首页弹窗、运营活动（开发草案）
 #!author=ChatGPT
+#!version=0.1.0
 #!system=ios
-#!icon=https://www.51zxw.net/favicon.ico
+#!homepage=https://www.51zxw.net
+#!icon=https://raw.githubusercontent.com/Facsy/Loon/refs/heads/main/icon/我要自学网.png
 
 [MITM]
 hostname = webapi.51zxw.net
 
 [Script]
 
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/QueryFirstTimeEnterAdConfig script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/rewrite/replace-body/replace-body.js, requires-body=true, timeout=60, argument={"success":true,"AdConfig":{"DisableAD":true}}
+# 开屏广告
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/QueryFirstTimeEnterAdConfig$ \
+requires-body=true, \
+script-path=https://example.invalid/51zxw/51zxw_noad.js, \
+tag=51ZXW Splash AD
 
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/rewrite/replace-body/replace-body.js, requires-body=true, timeout=60, argument={"success":true,"data":{}}
+# 首页弹窗
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType$ \
+requires-body=true, \
+script-path=https://example.invalid/51zxw/51zxw_noad.js, \
+tag=51ZXW Home Modal
 
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/VCoinDiscountPromotion script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/rewrite/replace-body/replace-body.js, requires-body=true, timeout=60, argument={"success":true,"data":{}}
+# 金币/会员促销
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/VCoinDiscountPromotion$ \
+requires-body=true, \
+script-path=https://example.invalid/51zxw/51zxw_noad.js, \
+tag=51ZXW Promotion
 
-http-response ^https:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/rewrite/replace-body/replace-body.js, requires-body=true, timeout=60
+# 全局配置
+http-response ^https:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig$ \
+requires-body=true, \
+script-path=https://example.invalid/51zxw/51zxw_noad.js, \
+tag=51ZXW Global Config
