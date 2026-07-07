@@ -9,8 +9,8 @@ hostname = webapi.51zxw.net
 
 ^https?:\/\/webapi\.51zxw\.net\/Other\/QueryFirstTimeEnterAdConfig url script-response-body https://github.com/Facsy/Loon/raw/refs/heads/main/51zxw_noad.js
 
-^https?:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType url script-response-body https://github.com/Facsy/Loon/raw/refs/heads/main/51zxw_noad.js
+^https?:\/\/webapi\.51zxw\.net\/Other\/HomePageModalType url script-response-body 
 
 ^https?:\/\/webapi\.51zxw\.net\/Other\/VCoinDiscountPromotion url script-response-body https://github.com/Facsy/Loon/raw/refs/heads/main/51zxw_noad.js
 
-^https?:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig url script-response-body https://github.com/Facsy/Loon/raw/refs/heads/main/51zxw_noad.js
+^https?:\/\/webapi\.51zxw\.net\/Other\/AppGlobalConfig url script-response-body 
