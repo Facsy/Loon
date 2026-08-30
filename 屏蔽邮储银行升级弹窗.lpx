@@ -1,6 +1,6 @@
-#!name=屏蔽邮政银行升级弹窗
+#!name=屏蔽邮储银行升级弹窗
 #!openUrl=https://apps.apple.com/app/id493489515
-#!icon=https://raw.githubusercontent.com/Facsy/Loon/refs/heads/main/icon/Forward.png#!homepage=https://github.com/Facsy/Loon
+#!icon=https://raw.githubusercontent.com/Facsy/Loon/refs/heads/main/icon/邮储银行.png#!homepage=https://github.com/Facsy/Loon
 #!author=Facsy
   
 [Rewrite]
