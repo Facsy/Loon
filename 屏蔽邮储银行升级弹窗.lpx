@@ -5,7 +5,6 @@
 #!homepage=https://github.com/Facsy/Loon
 #!author=Facsy
   
-[Rewrite]
 ^https:\/\/static\.mobile-bank\.psbc\.com\/mgs url reject
 
 [MITM]
